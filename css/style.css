@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
+    background-color: #242629;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.max-width{
+    max-width: 1366px;
+    margin: auto;
+}
+
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #34363b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4fc031;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+@media (max-width: 767px){
+    ::-webkit-scrollbar{
+        width: 4px;
+    }
+}
+
+
+
+
+
+nav{
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #34363b;
+}
+
+nav .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f0f0f0;
+}
+
+nav a{
+    color: #f0f0f0;
+}
+
+.credit p{
+    font-size: 1em;
+}
+
+nav .about button, 
+form button, 
+.btn-close button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-transform: capitalize;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+nav .about button i{
+    font-size: 12px;
+}
+
+nav .about button:hover{
+    color: #4fc031;
+}
+
+
+
+@media (max-width: 991px){
+    nav{
+        padding: 20px 23px;
+    }
+}
+
+@media (max-width: 600px){
+    nav .about button, .credit p{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+.about-card{
+    width: 100%;
+    height: auto;
+    padding: 70px 100px;
+    margin-bottom: 65px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #242629;
+}
+
+
+
+/* Animation to show the card */
+.about-card.show {
+    animation: slideUp 1s ease-in-out;
+    -webkit-animation: slideUp 1s ease-in-out;
+}
+
+/* Animation to hide the card */
+.about-card.hide {
+    animation: slideDown 1s ease-in-out;
+    -webkit-animation: slideDown 1s ease-in-out;
+}
+
+/* Keyframes for slideUp animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.about-card .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.about-card .cards .title{
+    text-transform: capitalize;
+    color: #f0f0f0;
+}
+
+.about-card .cards .title h1{
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.btn-close{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+.btn-close button{
+    color: #a0a0a1;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.btn-close button:hover{
+    color: #4fc031;
+}
+
+.about-card .left .text p{
+    color: #a0a0a1;
+    font-size: 1rem;
+}
+
+.about-card .left .text, 
+.socials, 
+.medias, 
+.credit-about{
+    margin-top: 1rem;
+}
+
+.credit-about p{
+    color: #a0a0a1;
+    font-size: 1em;
+}
+
+.credit-about p a{
+    color: #4fc031;
+    transition: 0.6s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    -moz-transition: 0.6s ease-in-out;
+    -ms-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
+}
+
+.credit-about p a:hover{
+    color: rgb(79, 192, 49,0.7);
+}
+
+.about-card .left .medias{
+    display: flex;
+}
+
+.about-card .left .medias li{
+    position: relative;
+}
+
+.about-card .left .medias li:not(:first-child){
+    margin-left: 20px;
+}
+
+.about-card .left .medias li a{
+    color: #a0a0a1;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+
+
+.about-card .left .medias li a:hover{
+    color: #4fc031;
+}
+
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    margin-top: 1rem;
+}
+
+form .input-content{
+    display: flex;
+    gap: 1.2rem;
+    position: relative;
+}
+
+.input-content .input{
+    width: 100%;
+    position: relative;
+}
+
+
+
+form .input-content input, form textarea{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    background-color: #34363b;
+    font-size: 1rem;
+    caret-color: #4fc031;
+    color: #a0a0a1;
+    transition: 0.1s ease;
+    -webkit-transition: 0.1s ease;
+    -moz-transition: 0.1s ease;
+    -ms-transition: 0.1s ease;
+    -o-transition: 0.1s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+form textarea {
+    height: 120px;
+    margin: 20px 0;
+}
+
+form input::placeholder, 
+form textarea::placeholder{
+    color: #a0a0a1;
+    font-size: 14px;
+}
+
+
+textarea:focus{
+    border: 1px solid #4fc031;
+}
+
+.input-content .input .border{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    border: 1px solid #4fc031;
+    z-index: -1;
+    transition: left 0.3s, width 0.3s 0.1s;
+    -webkit-transition: left 0.3s, width 0.3s 0.1s;
+    -moz-transition: left 0.3s, width 0.3s 0.1s;
+    -ms-transition: left 0.3s, width 0.3s 0.1s;
+    -o-transition: left 0.3s, width 0.3s 0.1s;
+}
+
+.input-content .input input:focus ~ .border{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+form button{
+    background-color: #4fc031;
+    padding: 10px 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+form button:hover{
+    background-color: rgb(71, 197, 171,0.7);
+}
+
+
+@media (max-width: 1100px){
+    .about-card{
+        padding: 70px 50px;
+    }
+}
+
+
+@media (max-width: 991px){
+    .about-card{
+        padding: 70px 23px;
+    }
+}
+
+@media (max-width: 767px){
+    .about-card{
+        top: 0;
+        overflow: scroll visible;
+    }
+
+    .about-card::-webkit-scrollbar{
+        width: 2px;
+    }
+    
+    .about-card::-webkit-scrollbar-track {
+        display: none;
+    }
+
+    .about-card::-webkit-scrollbar-thumb {
+        background: #4fc031;
+    }
+
+    .about-card .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .btn-close{
+        top: 1rem;
+    }
+}
+
+
+@media (max-width: 425px){
+    .input-content{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+.portfolio{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 67px;
+}
+
+.portfolio .items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio .items .item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio .items .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio .items .item img:hover{
+    opacity: 1;
+    -webkit-animation: flash 2s;
+    animation: flash 2s;
+}
+
+
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flash {
+	0% {
+		opacity: .3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+.portfolio .items .item .text{
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+}
+
+.portfolio .items .item .text p{
+    color: #f0f0f0;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 1250px){
+    .portfolio .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .portfolio .items{
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio .items .item .text{
+        left: 1rem;
+        bottom: 14px;
+    }
+
+    .portfolio .items .item .text p{
+        font-size: 1rem;
+    }
+}

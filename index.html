@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--------------------LIGHT GALLERY LIBRARY----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+
+    <!----------------------Font awesome library------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!------------------------------NAVIGATION------------------------------------------>
+    <nav>
+        <div class="max-widt">
+            <div class="content">
+                <div class="credit">
+                    <p>&COPY; <span id="year"></span> CATALOG</p>
+                </div>
+
+                <div class="about">
+                    <button class="about-btn" onclick="showAbout()">ABOUT <span><i class="fa-solid fa-user"></i></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!---------------------------------ABOUT SECTION--------------------------------------------->
+    <section class="about-card" id="about-card">
+        <div class="max-widt">
+            <div class="content">
+
+                <div class="btn-close">
+                    <button onclick="closeAbout()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <div class="cards">
+
+                    <div class="left">
+                        <div class="title">
+                            <h1>Far far away behind</h1>
+                        </div>
+                        <div class="text">
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                the Semantics, a large language ocean. A small river named Duden flows by their place
+                                and supplies it with the necessary regelialia.</p>
+                        </div>
+
+                        <div class="socials">
+                            <div class="title">
+                                <h1>follow me on...</h1>
+                            </div>
+                            <ul class="medias">
+                                <li><a href="javacsript:void()"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="javacsript:void()"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="javacsript:void()"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="javacsript:void()"><i class="fa-brands fa-github-alt"></i></a></li>
+                                <li><a href="javacsript:void()"><i class="fa-brands fa-dribbble"></i></a></li>
+                                <li><a href="javacsript:void()"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="credit-about">
+                            <p>&COPY; Developed by <a href="mailto:web4032@gmail.com">Angelo Dorange</a></p>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="form">
+                            <div class="title">
+                                <h1>GET IN TOUCH</h1>
+                            </div>
+
+                            <form action="#" method="post">
+                                <div class="input-content">
+                                    <div class="input">
+                                        <input type="text" name="name" placeholder="Name" required>
+                                        <div class="border"></div>
+                                    </div>
+                                    <div class="input">
+                                        <input type="email" name="email" placeholder="Email" required>
+                                        <div class="border"></div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <textarea name="message" placeholder="Message" required></textarea>
+                                    <div class="border"></div>
+                                </div>
+                                <div class="btn-form">
+                                    <button type="submit">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-----------------------------PORTFOLIO ITEMS--------------------------------------->
+    <section class="portfolio">
+        <div class="max-widt">
+            <div class="content">
+
+                <div class="items" id="lightgallery">
+
+                    <a href="img/p1.jpg" class="item">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="text">
+                            <p>Paloma Beach</p>
+                        </div>
+                    </a>
+                    
+
+                    <a href="img/p2.jpg" class="item">
+                        <img src="img/p2.jpg" alt="">
+                        <div class="text">
+                            <p>Neon Galaxy</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p3.jpg" class="item">
+                        <img src="img/p3.jpg" alt="">
+                        <div class="text">
+                            <p>Blue Lake</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p4.jpg" class="item">
+                        <img src="img/p4.jpg" alt="">
+                        <div class="text">
+                            <p>Nathan Wedding</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p5.jpg" class="item">
+                        <img src="img/p5.jpg" alt="">
+                        <div class="text">
+                            <p>Sahara Desert</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p6.jpg" class="item">
+                        <img src="img/p6.jpg" alt="">
+                        <div class="text">
+                            <p>Herling Portrait</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p7.jpg" class="item">
+                        <img src="img/p7.jpg" alt="">
+                        <div class="text">
+                            <p>Hong Kong Hotel</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p8.jpg" class="item">
+                        <img src="img/p8.jpg" alt="">
+                        <div class="text">
+                            <p>Adventure Road</p>
+                        </div>
+                    </a>
+                    
+                    <a href="img/p9.jpg" class="item">
+                        <img src="img/p9.jpg" alt="">
+                        <div class="text">
+                            <p>Animals Farm</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p10.jpg" class="item">
+                        <img src="img/p10.jpg" alt="">
+                        <div class="text">
+                            <p>Babad Palace</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p11.jpg" class="item">
+                        <img src="img/p11.jpg" alt="">
+                        <div class="text">
+                            <p>Haiti Banlieu</p>
+                        </div>
+                    </a>
+
+                    <a href="img/p12.jpg" class="item">
+                        <img src="img/p12.jpg" alt="">
+                        <div class="text">
+                            <p>New York Building</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-----------------------------------------JAVASCRIPT------------------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
